@@ -1,0 +1,338 @@
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/* Box-sizing */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+/* Default display for div */
+div {
+    display: block;
+}
+
+/* Body styles */
+body {
+    margin: 0;
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-medium-weight);
+    line-height: 1.5;
+    background-color: var(--cream);
+    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Custom properties */
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --dark-blue: hsl(212, 21%, 14%);
+    --grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --popup-box-shadow: 0 3px 40px rgba(172, 185, 220, 0.4);
+    --font-medium-weight: 500;
+    --font-bold-weight: 700;
+    --font-size-xl: 14px;
+    --heading-h5-size: 32px;
+    --default-border-radius: 4px;
+    --font-family-fraunces: 'Fraunces', serif;
+    --font-family-montserrat: 'Montserrat', sans-serif;
+}
+
+/* HTML styles */
+html {
+    font-family: var(--font-family-montserrat);
+    line-height: 1.15;
+    text-size-adjust: 100%;
+}
+
+/* Margin bottom classes */
+.mb-3,
+.my-3 {
+    margin-bottom: 1rem !important;
+}
+
+/* Card styles */
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: 0.75rem;
+}
+
+/* Row styles */
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: 25%; margin-bottom: 25%; */
+}
+
+/* Column styles */
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    /* padding-right: 15px; 
+    padding-left: 15px; */
+}
+
+/* Card image styles */
+
+.rounded-left {
+    border-top-left-radius: 0.75rem !important;
+    border-bottom-left-radius: 0.75rem !important;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-style: none;
+
+}
+
+/* Card body styles */
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    color: var(--grayish-blue);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-xl);
+}
+
+/* Paragraph styles */
+p {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+/* Card title styles */
+.card-title {
+    margin-bottom: 0.8rem;
+    font-family: var(--font-family-fraunces);
+    font-weight: var(--font-bold-weight);
+    color: var(--dark-blue);
+}
+
+/* Heading styles */
+.h5,
+h5 {
+    font-size: var(--heading-h5-size);
+}
+
+.h3,
+h3 {
+    font-size: 1.8rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-bold-weight);
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+
+/* Padding styles */
+.pr-4 {
+    padding-right: 1.5rem !important;
+}
+
+
+/* Card subtitle styles */
+.card-subtitle {
+    margin-top: -.375rem;
+    padding-top: 10px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    color: var(--grayish-blue);
+    font-size: var(--font-medium-weight);
+}
+
+.card-price {
+    display: inline-flex;
+}
+
+span.h3 {
+    font-family: var(--font-family-fraunces);
+    color: var(--dark-cyan);
+}
+
+span.strike {
+    text-decoration: line-through;
+    margin-top: 5%;
+    font-family: var(--font-family-montserrat);
+}
+
+
+[type=button]:not(:disabled),
+button:not(:disabled) {
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: var(--white);
+    background-color: var(--dark-cyan);
+}
+
+button {
+    overflow: visible;
+    text-transform: none;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border-radius: 0;
+    appearance: button;
+}
+
+.btn-primary:hover {
+    color: var(--white);
+    background-color: var(--dark-cyan);
+    border: 1px solid var(--dark-cyan);
+}
+
+.btn {
+    display: inline-block;
+    font-weight: var(--font-bold-weight);
+    border: 1px solid var(--dark-cyan);
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: 0.8rem 3.5rem;
+    font-size: inherit;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+img.icon {
+    padding-right: 5px;
+}
+
+/***** End card button *****/
+
+/* Media Queries */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 580px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .col-md-6 {
+        width: 100%;
+    }
+
+    .rounded-left {
+        border-top-left-radius: 0.75rem !important;
+        border-top-right-radius: 0.75rem !important;
+        border-bottom-left-radius: 0rem !important;
+    }
+
+    .img-fluid {
+        width: 100%;
+        height: 16rem;
+        object-fit: cover;
+        vertical-align: middle;
+        border-style: none;
+    }
+
+    .container {
+        max-width: 480px;
+        margin-top: 25px;
+        margin-bottom: 25px
+    }
+
+    .btn {
+        padding-right: 8rem;
+        padding-left: 7rem
+    }
+
+    .h3,
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    .btn {
+        padding-right: 6rem;
+        padding-left: 6rem
+    }
+}
+
+@media (max-width: 320px) {
+    .btn {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+}
