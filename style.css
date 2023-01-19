@@ -30,6 +30,7 @@ body {
 
 /* Custom properties */
 :root {
+    --dark-cyan-hover: hsl(158, 38%, 16%);
     --dark-cyan: hsl(158, 36%, 37%);
     --cream: hsl(30, 38%, 92%);
     --dark-blue: hsl(212, 21%, 14%);
@@ -230,8 +231,8 @@ button {
 
 .btn-primary:hover {
     color: var(--white);
-    background-color: var(--dark-cyan);
-    border: 1px solid var(--dark-cyan);
+    background-color: var(--dark-cyan-hover);
+    border: 1px solid var(--dark-cyan-hover);
 }
 
 .btn {
